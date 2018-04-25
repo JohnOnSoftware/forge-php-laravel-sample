@@ -44,13 +44,13 @@
             //    "expires_in": 86400
             // }
             //
-            var accessToken = 'eyJhbGciOiJIUzI1NiIsImtpZCI6Imp3dF9zeW1tZXRyaWNfa2V5In0.eyJjbGllbnRfaWQiOiJ6OGZHRDdzT3oyN2RHc2lHMWczZGYybmVsa1hjaFRBViIsImV4cCI6MTUyNDY1MTAyMCwic2NvcGUiOlsiZGF0YTpyZWFkIiwiYnVja2V0OnJlYWQiLCJidWNrZXQ6Y3JlYXRlIiwiZGF0YTp3cml0ZSIsImJ1Y2tldDpkZWxldGUiXSwiYXVkIjoiaHR0cHM6Ly9hdXRvZGVzay5jb20vYXVkL2p3dGV4cDYwIiwianRpIjoiWWU1NFNpVmk4eEg5dUg1Tm1FTldZRzFlMHNXcmdvYk1Kb0NSa1hHYkRxZVFibHMzNjZxR1Q1bGpkSzI4ekNDYyJ9.hEj5HcTa4LQfdc1-zl4BmAYtMir57xeu7Utym2hWykw';
+            var accessToken = '<<place your token here>>';
             var expireTimeSeconds = 60 * 30;
             onGetAccessToken(accessToken, expireTimeSeconds);
         }
 
     };
-    var documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am9obm9uc29mdHdhcmV3b3Jrc2hvcDMvYmI4YXIuZjNk';
+    var documentId = 'urn:<<place your urn here>>';
     Autodesk.Viewing.Initializer(options, function onInitialized(){
         viewerApp = new Autodesk.Viewing.ViewingApplication('MyViewerDiv');
         viewerApp.registerViewer(viewerApp.k3D, Autodesk.Viewing.Private.GuiViewer3D);
