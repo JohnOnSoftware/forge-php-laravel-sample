@@ -1,25 +1,21 @@
-# forge-php-laravel-sample
+# forge-php-laravel-sample - With dynamically generated Access Token.
 ## Introduction
 
-This is a basic sample to show the Forge Viewer with Laravel framework.
+- This is a basic sample to show the Forge Viewer with Laravel framework.
 
-Detail of installing Laravel, please check [https://laravel.com/docs/5.6](https://laravel.com/docs/5.6) 
+- Detail of installing Laravel, please check [https://laravel.com/docs/5.6](https://laravel.com/docs/5.6) 
 
-After create a Laravel project with 
-- **laravel new blog**
-
-Do the following steps:
+- After create a Laravel project with  **laravel new blog**, do the following steps:
 
 1. Create forge.blade.php under **resources/views/**, and copy/paster the Forge Viewer code from [Forge Viewer Tutorial](https://developer.autodesk.com/en/docs/viewer/v2/tutorials/basic-application/)
 
-2. Update URN & AccessToken with correct ones.
+2. Update URN with correct one.
 
-3. Redirect main page to above view by:
-        <pre><code>
-        Route::get('/', function () {
-            return view('forge');
-        });
-        </pre>
+3. Update your .env file with the following 2 environment variables:
+<pre><code>
+    FORGE_CLIENT_ID="<< Your Client ID >>"
+    FORGE_CLIENT_SECRET="<< Your Client Secret >>"
+</pre>
 
 4. start the server using **php artisan serve**, open **localhost:8000**, you will see the result 
 
