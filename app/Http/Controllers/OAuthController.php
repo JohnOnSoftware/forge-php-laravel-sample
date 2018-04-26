@@ -11,12 +11,12 @@ class OAuthController extends Controller
 {
     public function getAccessToken(){
         try{
-            $forge_id     = getenv('FORGE_CLIENT_ID');
-            $forge_secret = getenv('FORGE_CLIENT_SECRET');
+            $forgeId     = getenv('FORGE_CLIENT_ID');
+            $forgeSecret = getenv('FORGE_CLIENT_SECRET');
             
             Configuration::getDefaultConfiguration()
-            ->setClientId( $forge_id )
-            ->setClientSecret( $forge_secret );
+            ->setClientId( $forgeId )
+            ->setClientSecret( $forgeSecret );
             
             $twoLeggedAuth = new TwoLeggedAuth();
             $scope = ['bucket:create', 'bucket:read', 'data:read', 'data:create', 'data:write'];
