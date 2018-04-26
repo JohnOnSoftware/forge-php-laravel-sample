@@ -14,10 +14,12 @@ Do the following steps:
 
 2. Update URN & AccessToken with correct ones.
 
-3. Redirect main page to above view by:<pre><code>
-Route::get('/', function () {
-    return view('forge');
-});</pre>
+3. Redirect main page to above view by:
+        <pre><code>
+        Route::get('/', function () {
+            return view('forge');
+        });
+        </pre>
 
 4. start the server using **php artisan serve**, open **localhost:8000**, you will see the result 
 
